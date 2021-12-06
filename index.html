@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tamagochi</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<img src="img/logo.svg" class="logo_img">
+			<p class="logo_heading">LEGO TAMAGOTCHI</p>
+		</div>
+		<a href="authorization.html" class="login">LOG IN</a>
+	</header>
+	<section class="main">
+		<div class="main_greeting">
+			<h2 class="main_greeting1">Control</h2>
+			<h1 class="main_greeting2">Tamagotchi !</h1>
+			<button onclick="window.location='authorization.html'" class="input_button">Admin go</button>
+		</div>
+		<div class="users">
+			<p class="users_correct heading">Correct users</p>
+			<img src="img/boy.svg" class="img_boy">
+			<img src="img/girl.svg" class="img_girl">
+		</div>
+		<div class="mask">
+			<img src="img/mask_group.svg" class="mask_img">
+			<p class="mask_heading heading">Choose your welcome screen</p>
+		</div>
+		<div class="status">
+			<p class="status_tama heading">Watch tama statuses</p>
+			<p class="status_state">General state</p>
+			<div class="loading-bar__status">
+					<div class="element light_blue" style="width: 80%;"></div>
+			</div>
+		</div>	
+		<div class="container">
+			<div class="play">
+				<img src="img/play.svg" class="play_img">
+				<div class="box">
+					<p class="box_heading">Play</p>
+					<div class="loading-bar">
+						<div class="amount purple" style="width: 45%;"></div>
+					</div>					
+				</div>				
+			</div>
+			<div class="eat">
+				<img src="img/eat.svg" class="eat_img">
+				<div class="box">
+					<p class="box_heading">Satiety</p>
+					<div class="loading-bar">
+						<div class="amount green" style="width: 45%;"></div>
+					</div>
+				</div>	
+			</div>
+			<div class="health">
+				<img src="img/heal.svg" class="health_img">
+				<div class="box">
+					<p class="box_heading">Health</p>
+					<div class="loading-bar">
+						<div class="amount yellow" style="width: 45%;"></div>
+					</div>
+				</div>	
+			</div>
+			<div class="sleep">
+				<img src="img/sleep.svg" class="sleep_img">
+				<div class="box">
+					<p class="box_heading">Cheerfulness</p>
+					<div class="loading-bar">
+						<div class="amount blue" style="width: 45%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<footer></footer>	
+</body>
+</html>
