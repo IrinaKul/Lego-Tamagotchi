@@ -27,6 +27,8 @@
 	padding: 29px 80px;
 	font: 400 24px/27px righteous, arial;
 	color: black;
+	cursor: pointer;
+	text-decoration: underline;
 }
 
 h1 {
@@ -57,6 +59,13 @@ button {
 	border: none;
 	box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.34);
 	cursor: pointer;
+}
+
+form:invalid [type="submit"] {
+  pointer-events: none;
+  border: 1px solid #999999;
+  background-color: grey;
+  color: #666666;
 }
 
 footer {
