@@ -13,18 +13,19 @@
 			<img src="img/logo.svg" class="logo_img">
 			<p class="logo_heading">LEGO TAMAGOTCHI</p>
 		</div>
-		<a href="authorization.html" class="login">LOG IN</a>
+		<a onclick="link()" class="login">LOG IN</a>
 	</header>	
 	<h1>Admin</h1>
-	<form>
+	<form class="form">
 		<div class="forms">
-			<input type="text" name="name" placeholder=" user name">
+			<input type="text" class="name" name="name" placeholder=" user name" oninput="localStorage.setItem(this.name, this.value)" required>
 		</div>
 		<div class="forms">
-			<input type="password" name="password" placeholder=" password">
+			<input type="password" class="password" name="password" placeholder=" password" oninput="localStorage.setItem(this.name, this.value)" required>
 		</div>	
-		<button>Log in</button>	
+		<button type="submit">Log in</button>	
 	</form>
-	<footer></footer>
+	<footer></footer>	
+	<script type="text/javascript" src="authorization.js"></script>
 </body>
 </html>
