@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tamagochi_authorization</title>
+	<link rel="stylesheet" type="text/css" href="css/authorization.css">
+	<link rel="stylesheet" type="text/css" href="../Fonts/fonts.css">
+</head>
+<body>	
+	<header class="header">
+		<div class="logo" >
+			<img src="../img/logo.svg" class="logo_img">
+			<p onclick="logoClick()" class="logo_heading" >LEGO TAMAGOTCHI</p>
+		</div>
+		<a onclick="link()" class="login">LOG IN</a>
+	</header>	
+	<h1>ADMIN</h1>
+	<form class="form">
+		<div class="forms">
+			<input type="text" class="name" name="name" placeholder=" user name" oninput="localStorage.setItem(this.name, this.value)" required>
+		</div>
+		<div class="forms">
+			<input type="password" class="password" name="password" placeholder=" password" oninput="localStorage.setItem(this.name, this.value)" required>
+		</div>	
+		<button type="submit">LOG IN</button>	
+	</form>
+	<footer></footer>	
+	<script type="text/javascript" src="js/authorization.js"></script>
+</body>
+</html>
