@@ -1,0 +1,258 @@
+*{
+	margin: 0;
+}
+
+/*шапка профиля*/
+.header {
+	width: 100%;
+	height: 80px;
+	background-color: #EEBD17;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.logo {	
+	padding: 16px 0 16px 80px;
+}
+
+.logo_heading {
+	position: absolute;
+	left: 140px;
+	top: 29px;
+	font: 400 24px/27px righteous, arial;
+	cursor: pointer;
+}
+
+.login {
+	padding: 29px 80px;
+	font: 400 24px/27px righteous, arial;
+	color: black;
+    text-decoration: none;
+}
+
+/*Заголовок*/
+h1 {
+    font: 400 42px/47px righteous, arial;
+    padding: 0 0 50px 70px;
+}
+
+/*form: cancel, apply*/
+.change_value {
+	background-color: #fcedd7;
+    padding: 60px;
+    text-align: center;
+	position: relative;
+}
+
+h2 {
+	font: 27px/32px righteous, arial;
+	position: absolute;
+	top: 7%;
+    left: 39%;
+}
+
+.change_btn {
+	position: absolute;
+    top: 38%;
+    left: 38%;
+    width: 430px;
+    height: 60px;
+}
+
+.cancel, .apply {
+	width: 130px;
+    height: 48px;
+    position: absolute;
+    top: 25%;
+	border-radius: 10px;
+	font: 17px/22px righteous, arial;
+	cursor: pointer;
+}
+
+.cancel {
+	left: 0;
+	border: 1px solid #a8a094;		
+}
+
+.apply {
+	color: white;
+	background-color: black;
+	border: none;
+	box-shadow: 0 2px 8px 1px #a8a094;
+}
+
+/*основной блок: юзеры и состояния*/
+.main {
+	float: left;
+	padding-top: 40px;	
+}
+
+/*users*/
+.users {
+	width: 50%;
+}
+
+.user_tama {
+    display: flex;
+    flex-direction: reverse;
+    position: relative;
+    padding: 0 0 40px 50px;
+}
+
+.user_img {
+    width: 20%;
+    height: 20%;
+}
+
+.user_name {
+    position: absolute;
+    left: 32%;
+    top: 24%;;
+    font: 400 37px/42px righteous, arial;
+}
+
+.user_switch {
+	position: absolute;
+    top: 26%;
+    left: 70%;
+}
+
+/*users: on, off*/
+.switch-btn {
+	display: inline-block;
+	width: 72px; /* ширина */
+	height: 38px; /* высота */
+	border-radius: 19px; /* радиус скругления */
+	background: #bfbfbf; /* цвет фона */
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	transition-duration: 300ms; /* анимация */	
+}
+.switch-btn::after {
+	content: "";
+	height: 32px; /* высота кнопки */
+	width: 32px; /* ширина кнопки */
+	border-radius: 17px;
+	background: #F4C31E; /* цвет кнопки */
+	top: 3px; /* положение кнопки по вертикали относительно основы */
+	left: 3px; /* положение кнопки по горизонтали относительно основы */
+	transition-duration: 300ms; /* анимация */
+	position: absolute;
+	z-index: 1;
+}
+.switch-on {
+	background: #04BF00;
+}
+.switch-on::after {
+	left: 37px;
+	background: white;
+}
+
+/*состояния*/
+.status {
+	width: 50%;
+}
+
+/*GENERAL STATE*/
+.status_state {
+	font: 22px/27px righteous, arial;
+}
+
+.loading-bar__status {
+	position: relative;
+	width: 80%;
+	margin: 26px 0 27px 0;
+	border: 1px solid #C4C4C4;
+	background-color: #E5E5E5;
+}
+
+.loading-bar__status, .element {	
+	height: 30px;
+	border-radius: 15px;
+}
+
+.element {
+	position: absolute;
+  top: 0;
+  left: 0;  
+}
+
+.light_blue {
+	background-color: #00C6E1;
+}
+
+/*состояния: играть, есть, спать, лечить*/
+.condition {
+	display: flex;
+    flex-direction: reverse;
+    position: relative;
+	padding-bottom: 30px;
+}
+
+.condition_img {
+	width: 14%;
+    height: 14%;
+	cursor: pointer;
+}
+
+.box_heading {
+	font: 22px/27px righteous, arial;
+	position: absolute;
+	left: 25%;
+    top: 20%;
+}
+
+.box {
+	position: absolute;
+	left: 24%;
+	top: 50%;
+}
+
+/*реализация статуса ползунка*/
+.loading-bar {
+	position: relative;
+    width: 365px;
+    margin: 0px auto;
+    border: 1px solid #C4C4C4;
+    background-color: #E5E5E5;   
+}
+
+.loading-bar, .amount {
+	height: 30px;
+	border-radius: 15px;
+}
+
+.amount {    
+    position: absolute;
+    top: 0;
+    left: 0;     
+}
+
+/*подключение цветов*/
+.purple {
+	background-color: #C00296;
+}
+
+.green {
+	background-color: #027900;
+}
+
+.yellow {
+	background-color: #FDF195;
+}
+
+.blue {
+  background-color: #3037E3;    
+}
+
+/*заключающая часть*/
+footer {
+	margin-top: 64%;
+	background-color: #F4C31E;
+	height: 150px;
+}

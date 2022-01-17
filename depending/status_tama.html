@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tama statuses</title>
+	<link rel="stylesheet" type="text/css" href="css/status_tama.css">
+	<link rel="stylesheet" type="text/css" href="../Fonts/fonts.css">
+</head>
+<body>
+    <header class="header">
+		<div class="logo">
+			<img src="../img/logo.svg" class="logo_img">
+			<p onclick="logoClick()" class="logo_heading">LEGO TAMAGOTCHI</p>
+		</div>
+		<a href="authorization.html" class="login">LOG OUT</a>
+	</header>
+    <section>
+        <h1>TAMA STATUSES</h1>
+        <div class="change_value">
+            <h2>CHANGE TAMAS VALUE:</h2>
+            <div class="change_btn">
+                <button class="cancel">CANCEL</button>
+                <button class="apply">APPLY</button>
+            </div>            
+        </div>
+        <div class="users main">
+            <div class="user_tama">
+                <img src="../img/boy.svg" class="user_img">
+                <p class="user_name">TOM</p>
+                <div class="user_switch">
+                    <div class="switch-btn"></div>
+                </div>                                
+            </div>
+            <div class="user_tama">
+                <img src="../img/girl.svg" class="user_img">
+                <p class="user_name">SARAH</p> 
+                <div class="user_switch">
+                    <div class="switch-btn"></div>
+                </div>                               
+            </div>
+            <div class="user_tama">
+                <img src="../img/boy.svg" class="user_img">
+                <p class="user_name">TOM1</p>
+                <div class="user_switch">
+                    <div class="switch-btn"></div> 
+                </div>                               
+            </div>
+            <div class="user_tama">
+                <img src="../img/girl.svg" class="user_img">
+                <p class="user_name">SARAH1</p>
+                <div class="user_switch">
+                    <div class="switch-btn"></div> 
+                </div>                               
+            </div>
+        </div>
+        <div class="status main">
+            <div class="status_general">
+                <p class="status_state">GENERAL STATE</p>
+			    <div class="loading-bar__status">
+					<div class="element light_blue" style="width: 80%;"></div>
+			    </div>
+            </div>
+            <div class="container">
+                <div class="condition">
+                    <img src="../img/play.svg" class="condition_img">                    
+                    <p class="box_heading">PLAY</p>
+                    <div class="box">
+                        <div class="loading-bar">
+                            <div class="amount purple" style="width: 45%;"></div>
+                        </div>
+                    </div>                    	                   				
+                </div>
+                <div class="condition">
+                    <img src="../img/heal.svg" class="condition_img">                    
+                    <p class="box_heading">HEALTH</p>
+                    <div class="box">
+                        <div class="loading-bar">
+                            <div class="amount yellow" style="width: 45%;"></div>
+                        </div>
+                    </div>              
+                </div>
+                <div class="condition">
+                    <img src="../img/eat.svg" class="condition_img">                    
+                    <p class="box_heading">SATIETY</p>
+                    <div class="box">
+                        <div class="loading-bar">
+                            <div class="amount green" style="width: 45%;"></div>
+                        </div>
+                    </div>                     
+                </div>                
+                <div class="condition">
+                    <img src="../img/sleep.svg" class="condition_img">                    
+                    <p class="box_heading">CHEERFULNESS</p>
+                    <div class="box">
+                        <div class="loading-bar">
+                            <div class="amount blue" style="width: 45%;"></div>
+                        </div>
+                    </div>                       
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="js/admin_main.js"></script>
+</body>    
+</html>
