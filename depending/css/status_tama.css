@@ -60,6 +60,26 @@ h2 {
     height: 60px;
 }
 
+.cancel {
+	left: 0;
+	border: 1px solid #a8a094;		
+}
+
+.cancel:hover {
+	box-shadow: 0 2px 8px 1px #a8a094;
+}
+
+.apply {
+	color: white;
+	background-color: black;
+	border: none;
+	
+}
+
+.apply:hover {
+	box-shadow: 0 2px 8px 1px #a8a094;
+}
+
 .cancel, .apply {
 	width: 130px;
     height: 48px;
@@ -68,18 +88,6 @@ h2 {
 	border-radius: 10px;
 	font: 17px/22px righteous, arial;
 	cursor: pointer;
-}
-
-.cancel {
-	left: 0;
-	border: 1px solid #a8a094;		
-}
-
-.apply {
-	color: white;
-	background-color: black;
-	border: none;
-	box-shadow: 0 2px 8px 1px #a8a094;
 }
 
 /*основной блок: юзеры и состояния*/

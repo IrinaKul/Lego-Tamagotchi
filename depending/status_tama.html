@@ -20,7 +20,7 @@
         <div class="change_value">
             <h2>CHANGE TAMAS VALUE:</h2>
             <div class="change_btn">
-                <button class="cancel">CANCEL</button>
+                <button class="cancel" id="cancel">CANCEL</button>
                 <button class="apply">APPLY</button>
             </div>            
         </div>
@@ -63,38 +63,38 @@
             </div>
             <div class="container">
                 <div class="condition">
-                    <img src="../img/play.svg" class="condition_img">                    
+                    <img src="../img/play.svg" class="condition_img" id="play_btn">                    
                     <p class="box_heading">PLAY</p>
                     <div class="box">
                         <div class="loading-bar">
-                            <div class="amount purple" style="width: 45%;"></div>
+                            <div class="amount purple" style="width: 50%;" id="play"></div>
                         </div>
                     </div>                    	                   				
                 </div>
                 <div class="condition">
-                    <img src="../img/heal.svg" class="condition_img">                    
+                    <img src="../img/heal.svg" class="condition_img" id="health_btn">                    
                     <p class="box_heading">HEALTH</p>
                     <div class="box">
                         <div class="loading-bar">
-                            <div class="amount yellow" style="width: 45%;"></div>
+                            <div class="amount yellow" style="width: 50%;" id="health"></div>
                         </div>
                     </div>              
                 </div>
                 <div class="condition">
-                    <img src="../img/eat.svg" class="condition_img">                    
+                    <img src="../img/eat.svg" class="condition_img" id="eat_btn">                    
                     <p class="box_heading">SATIETY</p>
                     <div class="box">
                         <div class="loading-bar">
-                            <div class="amount green" style="width: 45%;"></div>
+                            <div class="amount green" style="width: 50%;" id="eat"></div>
                         </div>
                     </div>                     
                 </div>                
                 <div class="condition">
-                    <img src="../img/sleep.svg" class="condition_img">                    
+                    <img src="../img/sleep.svg" class="condition_img" id="sleep_btn">                    
                     <p class="box_heading">CHEERFULNESS</p>
                     <div class="box">
                         <div class="loading-bar">
-                            <div class="amount blue" style="width: 45%;"></div>
+                            <div class="amount blue" style="width: 50%;" id="sleep"></div>
                         </div>
                     </div>                       
                 </div>
@@ -103,5 +103,6 @@
     </section>
     <footer></footer>
     <script src="js/admin_main.js"></script>
+    <script src="js/status_tama.js"></script>
 </body>    
 </html>

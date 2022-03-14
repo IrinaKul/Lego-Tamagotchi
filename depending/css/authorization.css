@@ -57,9 +57,13 @@ button {
 	margin: 0 632px 108px 627px;
 	border-radius: 10px;
 	font: 400 24px/27px righteous, arial;
-	border: none;
-	box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.34);
+	border: none;	
 	cursor: pointer;
+}
+
+button:hover {
+	box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.541);
+	transition: 0.3s;
 }
 
 form:invalid [type="submit"] {
