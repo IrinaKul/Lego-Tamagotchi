@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Users from "./pages/Users";
 import TamaStatus from "./pages/TamaStatus";
+import Posts from "./pages/Posts";
 
 function App() {
     return (
@@ -14,7 +15,8 @@ function App() {
                     <Route path="/" element={<LoginForm />} />
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/users" element={<Users />} />
-                    <Route path="/status" element={<TamaStatus/>} />
+                    <Route path="/status" element={<TamaStatus/>} /> 
+                    <Route path="/posts" element={<Posts />} />                  
                 </Routes>
             </BrowserRouter>
             <Outlet />
