@@ -130,6 +130,9 @@ const Dashboard = () => {
                             <h1>TAMAGOTCHI !</h1>
                         </div>
                         <div>
+                            <a className="control__link" onClick={() => navigate("/posts")}>CREAT NEWS</a>
+                        </div>
+                        <div>
                             <a className="control__link" onClick={() => navigate("/users")}>
                                 CORRECT USERS
                             </a>
