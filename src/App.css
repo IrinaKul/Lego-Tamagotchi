@@ -97,6 +97,10 @@ footer {
    
 }
 
+.state-wrapper {
+  margin-top: 70px;
+}
+
 .state-all {
   margin-top: 35px;
   display: flex;
@@ -140,10 +144,6 @@ footer {
   flex-wrap: wrap;
   gap: 15px;
 
-}
-
-.status-wrapper {
-  
 }
 
 .user-status-wrapper {
@@ -227,6 +227,11 @@ justify-content: space-between;
 
 .control__input input {
   font-size: 24px;
- border-radius: 10px;
- width: 350px;
+  border-radius: 10px;
+  width: 350px;
+}
+
+/*Post Page*/
+.posts__main {
+  padding: 2% 1%;
 }
