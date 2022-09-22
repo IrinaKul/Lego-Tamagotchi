@@ -88,6 +88,10 @@ footer {
     display: flex;
 }
 
+.link_users {
+  margin-bottom: 13%;
+}
+
 .control__link {
     font-size: 36px;
     text-decoration-line: underline;
@@ -95,6 +99,10 @@ footer {
     cursor: pointer;
     color: black;
    
+}
+
+.link_news {
+  text-align: center;
 }
 
 .state-wrapper {
@@ -111,16 +119,16 @@ footer {
 }
 
 .state-all__status {
-  padding-right: 15px;
+  padding-right: 25px;
   width: 50%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .state__progress-bar {
-  width: 580px;
+  width: 510px;
 }
 
 .user-card {
