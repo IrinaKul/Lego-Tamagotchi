@@ -128,11 +128,8 @@ const Dashboard = () => {
                         <div>
                             <h1>control</h1>
                             <h1>TAMAGOTCHI !</h1>
-                        </div>
-                        <div>
-                            <a className="control__link" onClick={() => navigate("/posts")}>CREAT NEWS</a>
-                        </div>
-                        <div>
+                        </div>                        
+                        <div className="link_users">
                             <a className="control__link" onClick={() => navigate("/users")}>
                                 CORRECT USERS
                             </a>
@@ -148,15 +145,8 @@ const Dashboard = () => {
                     </div>
                     <div>
                         <img src={imageUrl ? imageUrl : mask} />
-                        <div>
-                            <a
-                                className="control__link"
-                                onClick={() => {
-                                    setIsInputShow((prev) => !prev);
-                                }}
-                            >
-                                Choose your welcome screen
-                            </a>
+                        <div className="link_news">
+                            <a className="control__link" onClick={() => navigate("/posts")}>CREAT NEWS</a>                            
                         </div>
                         {isInputShow && (
                             <div className="control__input">
@@ -192,7 +182,7 @@ const Dashboard = () => {
                             </div>
                             <div className="state__progress-bar">
                                 <h3>PLAY</h3>
-                                {playStatus ? <ProgressBar completed={playStatus} bgColor="#C00296" height="32px" animateOnRender={true} /> : <></>}
+                                <ProgressBar completed={playStatus} bgColor="#C00296" height="32px" animateOnRender={true} /> 
                             </div>
                         </div>
                         <div className="state-all__status">
