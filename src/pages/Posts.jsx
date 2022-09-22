@@ -6,29 +6,62 @@ import { Button, Spinner } from "react-bootstrap";
 import avatar from "../assets/images/avatar.png";
 import PostForm from '../components/posts/PostForm';
 import PostList from '../components/posts/PostList';
+import axios from "axios";
 
 const Posts = () => {
     const [user, loading, error] = useAuthState(auth);
     const navigate = useNavigate();   
-    const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState([]);    
 
     useEffect(() => {
         if (loading) return <Spinner animation="border" />;
         if (!user) return navigate("/");
     }, [user, loading]);
 
+    useEffect(() => {
+        getPosts();        
+    }, []);
+
     const creatPosts = (newPost) => {
-        setPosts([...posts, newPost]);
-        updatePosts(posts);
+        setPosts([...posts, newPost]);        
+        console.log(posts);        
     }
 
     const removePosts = (post) => {
         setPosts(posts.filter(p => p.id !== post.id));
+        deletePost(post.id)
     }
 
-    const updatePosts = (posts) => {
-        console.log(posts)
-    }
+    const getPosts = async () => {
+        try {
+            const response = await axios.get("https://tamagotchi-backend.herokuapp.com/image_data");
+            setPosts(response.data);
+            console.log(response.data);
+        } catch (err) {
+            console.log(err);
+        }
+    };    
+
+    const deletePost = async (id) => {
+        try {
+            const auth = await axios.post("https://tamagotchi-backend.herokuapp.com/user/login", {
+                "login": "string",
+                "password": "string"
+              })
+
+              console.log(auth.data.access_token);
+              
+            const response = await axios.delete(`https://tamagotchi-backend.herokuapp.com/image_data/${id}`, {
+                headers: {
+                    Authorization: `Bearer ${auth.data.access_token}`
+                },
+            });
+            console.log(response.data);
+            getPosts();
+        } catch (err) {
+            console.log(err);
+        }
+    };
 
     return (
         <div>
