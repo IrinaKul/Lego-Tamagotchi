@@ -13,7 +13,7 @@ const PostList = ({ posts, title, remove }) => {
                         <div className={s.post__text}>
                             <strong>{index+1} {post.title}</strong>
                             <div>
-                                {post.description}
+                                {post.text}
                             </div>    
                         </div>                                            
                     </div>
